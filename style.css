@@ -433,7 +433,7 @@ footer {
 }
 
 .chatbot-icon {
-  position: absolute;
+  position: fixed;
   right: 100px;
   top: 40%;
   background: white;
@@ -444,3 +444,4 @@ footer {
   justify-content: center;
   align-items: center;
 }
+

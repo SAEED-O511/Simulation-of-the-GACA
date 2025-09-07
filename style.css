@@ -1,0 +1,580 @@
+:root {
+  --primary-green: #14573a;
+  --light-green: #1b8354;
+  --gradient-start: #4ecdc4;
+  --gradient-end: #556b8d;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.gray {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-green) !important;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.navbar .nav-link:hover {
+  color: #1b8354 !important;
+}
+
+.hero-section {
+  background-image: url("./assets/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 0;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.E-Services,
+.Knowledge {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 80px;
+  opacity: 0.9;
+}
+
+.search-box {
+  width: 80%;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  color: white;
+  padding: 10px 40px 10px 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: none;
+}
+
+.search-box .search {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.airplane-img {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  width: 200px;
+  opacity: 0.8;
+}
+
+.people-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  flex: 0 0 20%;
+  /* 5 cards per view => 100/5 */
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.service-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+.service-card h6 {
+  font-weight: bold;
+}
+
+.carousel-indicators-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.carousel-indicator-line {
+  height: 3px;
+  width: 170px;
+  background-color: #d3e6e8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-indicator-line.active {
+  background-color: #238b6e;
+  height: 5px;
+}
+
+.carousel-arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0d3d4b;
+  cursor: pointer;
+}
+
+.carousel-controls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-card {
+    flex: 0 0 100%;
+  }
+}
+
+.optimize-section {
+  color: white;
+  margin: 80px 0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.optimize-content {
+  position: relative;
+  z-index: 2;
+  background-image: url("./assets/Frame.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.pb-9 {
+  margin-bottom: 100px;
+}
+
+.optimize-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 59px;
+  margin-top: 68px;
+  margin-left: 60px;
+}
+
+.OptimizingBtn {
+  margin-left: 60px;
+}
+
+.card-custom {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  padding: 0 46px;
+  border: 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.nav-button {
+  width: 300px;
+  height: 60px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.show-more-btn {
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+}
+
+.activity-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+
+.activity-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.activity-author {
+  font-size: 14px;
+  color: #777;
+}
+
+.details-link {
+  color: #157347;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  justify-content: end;
+  margin-top: 30px;
+  border: 0;
+  background-color: transparent;
+}
+
+.pagination .page-link {
+  color: #157347;
+  background-color: transparent;
+  border: 0;
+}
+
+.activities-section {
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+/* Divider styles */
+.divider-container {
+  display: flex;
+}
+
+.vertical-divider {
+  position: relative;
+  width: 1px;
+  background-color: #d9d9d9;
+  margin: 0 40px;
+}
+
+.vertical-divider::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 60px;
+  background-color: #198754;
+}
+
+.ptt-4 {
+  margin-top: 40px;
+}
+
+.Incidents {
+  margin-bottom: 100px;
+}
+
+.nav-button1 {
+  margin-bottom: 20px;
+}
+
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.knowledge-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.knowledge-margin {
+  margin-bottom: 20px;
+}
+
+.feedback-container {
+  max-width: 1926px;
+  margin: 0 auto;
+
+  padding: 20px 100px;
+  border-top: 1px rgb(211, 211, 211) solid;
+}
+
+.question-text {
+  font-size: 18px;
+}
+
+.feedback-btn {
+  width: 63px;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #14573a;
+  color: white;
+}
+.footer-content {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 40px;
+}
+.footer-section h6 {
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.borderfoter {
+  border-bottom: 1px solid white;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  margin-top: 100px !important;
+  padding-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+}
+
+.footer-bottom a {
+  color: white;
+  margin-right: 15px;
+}
+
+.social-icons a {
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.gov-badge {
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-flex;
+}
+
+.fsfoter {
+  font-size: 14px;
+}
+
+.chatbot-icon {
+  position: fixed;
+  right: 100px;
+  top: 40%;
+  background: white;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .hero-section {
+    background-image: url("./assets/1.1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .E-Services,
+  .Knowledge {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .section-title {
+    margin: 0px;
+  }
+  .carousel-indicators-custom {
+    display: none;
+  }
+
+  .optimize-section {
+    color: white;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    border-radius: 20px;
+    position: relative;
+  }
+  .optimize-content {
+    position: relative;
+    z-index: 2;
+    background-image: url("./assets/Frame1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .optimize-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 59px;
+    margin-top: 68px;
+    margin-right: 6px;
+    margin-left: 24px;
+  }
+  .lead {
+    width: 90%;
+    margin-bottom: 15px !important;
+    margin-right: 0px !important;
+  }
+  .OptimizingBtn {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pb-9 {
+    margin-bottom: 50px;
+  }
+  .activities-section {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .divider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vertical-divider {
+    display: none;
+  }
+  .card-custom {
+    border-radius: 15px;
+    box-shadow: 0;
+    background-color: #fff;
+    padding: 0;
+    border: 0;
+  }
+  .Incidents {
+    margin-bottom: 0px;
+  }
+  .show-more-btn {
+    font-size: 22px;
+    font-weight: 500 !important;
+  }
+  .activity-item {
+    padding: 20px 15px;
+    flex-wrap: wrap;
+  }
+  .knowledge-grid {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .Knowledge {
+    flex-wrap: wrap;
+  }
+
+  .feedback-btn {
+    width: auto;
+    height: auto;
+  }
+  .feedback-container {
+    padding: 0;
+  }
+  .Was {
+    flex-wrap: wrap;
+  }
+  .footer-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    margin-top: 0 !important;
+  }
+
+  .gov-badge {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .chatbot-icon {
+    top: 90%;
+    right: 1%;
+  }
+}
